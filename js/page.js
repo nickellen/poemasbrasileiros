@@ -25,3 +25,11 @@ $(document).ready(function(){
         $("html, body").animate({scrollTop: posicao},400);
     });
 })
+
+function teste() {
+    const box = document.getElementById("teste");
+
+    box.style.overflow = box.style.backgroundColor === "lightblue" ? "lightcoral" : "lightblue";
+
+    box.innerText = box.innerText === "Clique aqui" ? "Alterado!" : "Clique aqui";
+}
